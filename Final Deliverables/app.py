@@ -61,9 +61,9 @@ def predict():
 
 
 	#predict = predictions['predictions'][0]['values'][0][0]
-	print("Final prediction :",predict)
+	print("Final prediction :",predict*30)
 
-	return render_template('predict.html',predict=predict)
+	return render_template('predict.html',predict=predict*30)
 
 if __name__=='__main__':
 	reg_model = load_model()#load the saved model
